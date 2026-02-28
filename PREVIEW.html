@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红岸数字科技 | RedCoast Technology</title>
+    <style>
+        /* 简化版CSS - 单文件预览版本 */
+        * {margin:0;padding:0;box-sizing:border-box;}
+        html{scroll-behavior:smooth;}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;line-height:1.6;color:#1d1d1f;}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px;}
+        .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;text-align:center;padding:50px 20px;}
+        .hero h1{font-size:3rem;font-weight:700;margin-bottom:20px;}
+        .hero h1 span{display:block;}
+        .hero .slogan{font-style:italic;margin-bottom:10px;opacity:0.9;}
+        .hero .subtitle{margin-bottom:30px;opacity:0.85;}
+        .hero .btn{display:inline-block;padding:12px 30px;border-radius:30px;text-decoration:none;margin:10px;cursor:pointer;}
+        .btn-primary{background:white;color:#0071e3;}
+        .btn-secondary{background:transparent;color:white;border:2px solid white;}
+        .section{padding:80px 20px;}
+        .section-dark{background:#1d1d1f;color:white;}
+        .section-light{background:#f5f5f7;}
+        .section-title{text-align:center;font-size:2.5rem;margin-bottom:50px;}
+        .products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;max-width:1200px;margin:0 auto;}
+        .product-card{background:white;border-radius:15px;padding:30px;text-align:center;box-shadow:0 5px20px rgba(0,0,0,0.1);transition:transform0.3s;}
+        .product-card:hover{transform:translateY(-5px);}
+        .product-icon{width:60px;height:60px;margin:0 auto 20px;color:#0071e3;}
+        .radar-container{display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:1200px;margin:0 auto;padding:0 20px;}
+        .radar-news{background:rgba(255,255,255,0.05);border-radius:15px;padding:30px;min-height:300px;}
+        .news-item{margin-bottom:30px;padding:20px;background:rgba(255,255,255,0.1);border-radius:10px;}
+        .news-source{display:inline-block;padding:5px 15px;background:#0071e3;border-radius:15px;font-size:0.85rem;margin-bottom:10px;}
+        .news-title{font-size:1.2rem;margin-bottom:10px;}
+        .news-summary{opacity:0.8;}
+        .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:1000px;margin:0 auto;padding:0 20px;}
+        .contact-form{background:white;padding:30px;border-radius:15px;}
+        .form-group{margin-bottom:15px;}
+        .form-group label{display:block;margin-bottom:5px;font-weight:500;}
+        .form-group input,.form-group textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;}
+        .footer{background:#1d1d1f;color:white;padding:40px 20px;text-align:center;}
+        @media(max-width:768px){
+            .hero h1{font-size:2rem;}
+            .radar-container,.contact-grid,.products-grid{grid-template-columns:1fr;}
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>
+                <span style="font-size:2rem;">红岸数字科技</span>
+                <span style="font-size:1.2rem;">RedCoast Technology</span>
+            </h1>
+            <p class="slogan">"There are decades where nothing happens, and there are weeks where decades happen."</p>
+            <p class="subtitle">智能化集成与人工智能创新应用开发</p>
+            <a href="#products" class="btn btn-primary">探索产品</a>
+            <a href="#about" class="btn btn-secondary">了解我们</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">关于我们</h2>
+            <p style="text-align:center;max-width:800px;margin:0 auto 30px;">人文艺术与科学技术的完美融合</p>
+            <div style="max-width:800px;margin:0 auto;">
+                <h3 style="margin-bottom:15px;color:#42a5f5;">公司定位</h3>
+                <p style="margin-bottom:30px;opacity:0.85;">红岸数字科技致力于智能化集成与人工智能创新应用开发，拥有供应链+工具链优势，具备技术雷达和细分场景应用开发能力。</p>
+                <h3 style="margin-bottom:15px;color:#42a5f5;">核心优势</h3>
+                <ul style="margin-bottom:30px;padding-left:20px;opacity:0.85;">
+                    <li>强大的算法团队与工程设计师</li>
+                    <li>完整的供应链+工具链体系</li>
+                    <li>链接产业上下游的生态网络</li>
+                    <li>智能工业设计与制造能力</li>
+                </ul>
+                <h3 style="margin-bottom:15px;color:#42a5f5;">生态体系</h3>
+                <p style="opacity:0.85;"><strong>上游：</strong>设计+制造 · 智能工业设计 · 设备厂 · 原料 · 元器件 · 各类电子配件的组装生产能力</p>
+                <p style="opacity:0.85;margin-top:10px;"><strong>下游：</strong>定制化需求方 · 渠道商 · 平台</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">产品与服务</h2>
+            <p style="text-align:center;margin-bottom:40px;color:#86868b;">覆盖智能硬件领域的全方位解决方案</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">📱</div>
+                    <h3>智能交互硬件</h3>
+                    <p>下一代人机交互体验，融合AI技术与硬件创新</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🖥️</div>
+                    <h3>智能屏显示设备</h3>
+                    <p>高清智能显示解决方案，广泛应用多个领域</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🤖</div>
+                    <h3>多用途机器人</h3>
+                    <p>服务型与工业型机器人系统</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🚁</div>
+                    <h3>无人机系统</h3>
+                    <p>专业级无人机解决方案</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🌐</div>
+                    <h3>空中成像设备</h3>
+                    <p>创新空中成像技术</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">⌚</div>
+                    <h3>智能穿戴设备</h3>
+                    <p>健康监测、运动追踪、智能配饰</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🌾</div>
+                    <h3>智能农业设备</h3>
+                    <p>智慧农业解决方案</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🔒</div>
+                    <h3>智能安防</h3>
+                    <p>全方位智能安防系统</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Radar Section -->
+    <section id="radar" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">技术雷达站</h2>
+            <p style="text-align:center;margin-bottom:10px;">实时追踪全球科技创新动态</p>
+            <p style="text-align:center;margin-bottom:30px;font-size:0.9rem;opacity:0.7;">每24小时自动更新 · 来自Science、Nature、小红书、知乎、抖音等平台</p>
+            <div class="radar-container">
+                <div style="background:rgba(255,255,255,0.05);border-radius:15px;padding:40px;text-align:center;">
+                    <div style="width:200px;height:200px;margin:0 auto;border:3px solid #0071e3;border-radius:50%;display:flex;align-items:center;justify-content:center;">
+                        <div style="width:150px;height:150px;border:2px solid #0071e3;border-radius:50%;"></div>
+                    </div>
+                    <p style="margin-top:20px;color:#42a5f5;">📡 雷达扫描中...</p>
+                </div>
+                <div class="radar-news">
+                    <div class="news-item">
+                        <span class="news-source">Science</span>
+                        <h4 class="news-title">新型人工智能算法在医疗诊断中实现突破</h4>
+                        <p class="news-summary">研究人员开发出一种深度学习模型，能够在早期阶段检测出癌症，准确率达到98%</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-source">Nature</span>
+                        <h4 class="news-title">量子计算实现新里程碑</h4>
+                        <p class="news-summary">科学家成功制造出100量子位的稳定量子处理器，为实用化量子计算奠定基础</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-source">小红书</span>
+                        <h4 class="news-title">AI绘画工具引爆创意设计</h4>
+                        <p class="news-summary">设计师分享使用AI辅助设计的工作流程，效率提升超过300%</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-source">抖音</span>
+                        <h4 class="news-title">智能机器人新应用场景</h4>
+                        <p class="news-summary">餐厅引入智能送餐机器人，提升服务效率，降低人力成本</p>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-source">知乎</span>
+                        <h4 class="news-title">5G+IoT推动智慧城市落地</h4>
+                        <p class="news-summary">专家解读物联网技术在智慧城市建设中的最新应用案例</p>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align:center;margin-top:30px;opacity:0.6;">📡 技术雷达站 · 自动采集 · 智能分析 · 实时推送</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">联系我们</h2>
+            <p style="text-align:center;margin-bottom:40px;">开启智能化创新之旅</p>
+            <div class="contact-grid">
+                <div>
+                    <h3 style="margin-bottom:20px;color:#0071e3;">公司信息</h3>
+                    <p><strong>公司名称：</strong>上海红岸洲际数字科技有限公司</p>
+                    <p><strong>RedCoast Technology</strong></p>
+                    <p style="margin-top:15px;"><strong>主营业务：</strong>智能化集成与人工智能创新应用开发</p>
+                    <p style="margin-top:15px;"><strong>联系邮箱：</strong>contact@redcoast.com</p>
+                    <p style="margin-top:15px;"><strong>公司地址：</strong>上海市</p>
+                </div>
+                <div class="contact-form">
+                    <h3 style="margin-bottom:20px;">发送消息</h3>
+                    <form>
+                        <div class="form-group">
+                            <label>姓名</label>
+                            <input type="text" placeholder="您的姓名">
+                        </div>
+                        <div class="form-group">
+                            <label>邮箱</label>
+                            <input type="email" placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label>主题</label>
+                            <input type="text" placeholder="消息主题">
+                        </div>
+                        <div class="form-group">
+                            <label>消息</label>
+                            <textarea rows="4" placeholder="请输入您的消息..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">发送消息</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h3>红岸数字科技</h3>
+            <p style="font-style:italic;margin-bottom:20px;">"There are decades where nothing happens, and there are weeks where decades happen."</p>
+            <p style="opacity:0.6;">© 2024 上海红岸洲际数字科技有限公司. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 简化版JavaScript - 单文件预览版本
+        console.log('红岸数字科技官网已加载');
+        console.log('这是一个简化预览版本，完整版本请使用完整的项目文件');
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) target.scrollIntoView({behavior:'smooth'});
+            });
+        });
+
+        // 简单的滚动效果
+        window.addEventListener('scroll', () => {
+            const hero = document.querySelector('.hero');
+            const scrolled = window.scrollY;
+            if(scrolled > 100) {
+                hero.style.opacity = '0.95';
+            } else {
+                hero.style.opacity = '1';
+            }
+        });
+    </script>
+</body>
+</html>
